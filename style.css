@@ -118,6 +118,7 @@ a {
 .highlight {
   text-align: center;
   color: #000000;
+  cursor:pointer;
 }
 
 .highlight img {
@@ -138,6 +139,7 @@ a {
   gap: 50px;
   padding: 15px 0;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 /* Galería */
@@ -152,4 +154,50 @@ a {
   height: 50%;
   object-fit: cover;
   display: block;
+}
+
+
+.post-image img {
+  width: 100%;       /* Ocupa el 100% del ancho del contenedor .post-image */
+  max-width: 300px;  /* Limita el ancho máximo a 300px para que no sea muy grande */
+  height: auto;      /* Mantiene la proporción original */
+  margin: auto;    /* Centra la imagen dentro del contenedor */
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #d8d8d8;
+  border: transparent;
+}
+
+
+.post-container {
+  display: center;
+  margin-left:40%;
+}
+
+.comments {
+  border-radius: transparent;
+}
+
+.usuario{
+  color: blue;
+  background-color: #d8d8d8;
+  border: transparent;
+  cursor: pointer;
 }
