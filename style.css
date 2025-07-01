@@ -101,6 +101,7 @@ a {
   display: flex;
   gap: 25px;
   margin: 15px 0;
+  cursor: pointer;
 }
 
 .profile-bio {
