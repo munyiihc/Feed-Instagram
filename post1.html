@@ -1,29 +1,59 @@
-<!-- post.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Post | noxiagallery</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="post-style.css" />
 </head>
 <body>
-  <div class="post-container">
-    <div class="post-image">
-      <img src="img/tattoo2.jpg" alt="Tattoo ampliado" />
-      <p class="date">22 de mayo</p>
-      <p class="likes">❤️ Les gusta a <button class="usuario">@tattopunisher</button> y 50.000 personas más...</p>
+  <div class="post-wrapper">
+    <!-- Imagen -->
+    <div class="post-image-section">
+      <img src="img/tattoo2.jpg" alt="Tattoo ampliado" class="post-main-image"/>
     </div>
-    <div class="post-comments">
-        <div class="user-profile">
-        <img src="img/logo.png" alt="Nombre del Usuario" class="user-avatar"><button class="user-name">noxiagallery</button>
+
+    <!-- Contenido lateral -->
+    <div class="post-info-panel">
+      <!-- Usuario -->
+      <div class="post-header">
+        <img src="img/logo.png" alt="avatar" class="post-avatar" />
+        <div class="post-user-data">
+          <span><strong>noxiagallery</strong></span>
+          <p class="post-location">Valencia</p>
+        </div>
       </div>
-      <hr />
-      <div class="comments">
-        <button class="usuario"><strong>@studioblack</strong></button>Te pasas🔥</p>
-        <button class= "usuario"><strong>@lettering_chicano</strong></button> Incrible 🔥🔥</p>
+
+      <hr class="post-divider" />
+
+      <!-- Descripción -->
+      <div class="post-description">
+        <p><strong>noxiagallery</strong> En proceso para Ana. Muchas gracias por la confianza!!  ✨</p>
+        <p>
+          Hecho en <button class="usuario">@noxiagallery</strong></button>.<br>
+          Si estás pensando en algo así, reserva tu cita por MD o WhatsApp al 611 965 315. 🖤<br>
+          <span class="post-tags">#blackwork #blackouttattoo #coveruptattoo #tattoovalencia</span>
+        </p>
+        <p class="post-date">22 de mayo</p>
       </div>
-      <div class="comment-box">
+
+      <!-- Comentarios -->
+      <div class="post-comments">
+        <div class="post-header">
+            <img src="img/perfil1.jpg" alt="avatar" class="post-avatar"/><p><button class="usuario1"><strong>marc.tattooer</strong></button> Yeah 🔥</p>
+        </div>
+        <div class="post-header">
+            <img src="img/perfil2.jpg" alt="avatar" class="post-avatar"/><p><button class="usuario1"><strong>LAink</strong></button> Brutal 🔥🔥</p>
+        </div>
+      </div>
+
+      <!-- Likes -->
+      <div class="post-likes">
+        ❤️ Les gusta a <button class="usuario">@noxiagallery</button> y otras personas
+      </div>
+
+      <!-- Caja de comentario -->
+      <div class="post-comment-box">
         <input type="text" placeholder="Agrega un comentario..." />
         <button>Publicar</button>
       </div>
