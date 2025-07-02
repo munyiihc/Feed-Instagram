@@ -9,6 +9,7 @@ body {
 }
 
 .post-wrapper {
+  position: relative; /* ① permite posicionar la "X" respecto a este contenedor */
   display: flex;
   flex-direction: row;
   max-width: 900px;
@@ -16,6 +17,22 @@ body {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
+.close-btn {
+      position: absolute;
+      top: 10px;        /* separación desde arriba */
+      right: 10px;      /* separación desde la derecha */
+      font-size: 24px;  /* tamaño de la X */
+      color: #333;      /* color visible */
+      background: none; /* sin fondo */
+      border: none;     /* sin borde */
+      cursor: pointer;  /* cursor indicativo */
+      z-index: 10;      /* por encima del contenido */
+    }
+
+.close-btn:hover {
+      color: #000;
+    }
 
 .post-image-section {
   flex: 1;
